@@ -3,6 +3,5 @@ let square;
 
 for (let i = 1; i < 257; i++) {
   square = document.createElement("div");
-  square.textContent = i;
   container.appendChild(square);
 }
