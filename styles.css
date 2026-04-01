@@ -1,0 +1,24 @@
+* {
+  box-sizing: box-border;
+}
+
+body {
+  display: flex;
+  background-color: gray;
+}
+
+.container {
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+}
+.container div {
+  height: 75px;
+  width: 75px;
+  background-color: #7cc7a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
