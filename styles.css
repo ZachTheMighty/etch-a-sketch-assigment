@@ -10,17 +10,17 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-flow: row wrap;
-  width: 402px;
   border-top: 1px solid black;
   border-left: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  width: 501px;
+  height: 501px;
 }
-.container div {
+
+.square {
   border-right: 1px solid black;
   border-bottom: 1px solid black;
-  height: 25px;
-  width: 25px;
 }
 
 .orange {

@@ -1,18 +1,25 @@
 let container = document.querySelector(".container");
+const containerDimensions = 500;
 let square;
 
-for (let i = 1; i < 257; i++) {
-  square = document.createElement("div");
-  container.appendChild(square);
+function createGrid(numberOfSquares) {
+  for (let i = 0; i < Math.pow(numberOfSquares, 2); i++) {
+    square = document.createElement("div");
+    square.classList.add("square");
+    let dimension = containerDimensions / numberOfSquares;
+    square.style.width = `${dimension}px`;
+    square.style.height = `${dimension}px`;
+    container.appendChild(square);
+  }
 }
 
-let squares = document.querySelectorAll(".container div");
+createGrid(10);
+
+let squares = document.querySelectorAll(".square");
 
 squares.forEach((square) => {
   square.addEventListener("mouseenter", () =>
     square.classList.toggle("orange"),
   );
-  square.addEventListener("mouseleave", () =>
-    square.classList.toggle("fade"),
-  );
+  square.addEventListener("mouseleave", () => square.classList.toggle("fade"));
 });
