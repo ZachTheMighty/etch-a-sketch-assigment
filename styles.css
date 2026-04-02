@@ -5,13 +5,19 @@
 body {
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
   align-items: center;
 }
 
+button {
+  font-size: 24px;
+  padding: 4px 12px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
 .container {
-  border-top: 1px solid black;
-  border-left: 1px solid black;
   display: flex;
   flex-flow: row wrap;
   width: 501px;
@@ -19,8 +25,7 @@ body {
 }
 
 .square {
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
+  border: 0.1px solid #c4c4c4;
 }
 
 .orange {
